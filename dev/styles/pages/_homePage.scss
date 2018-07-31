@@ -1,0 +1,54 @@
+.logo{
+	width: 200px;
+	position: absolute;
+    left: 0;
+    top: 0;
+    padding: 12px 24px !important;
+}
+
+.center{
+	color: $white;
+	background: rgba(255, 55, 55, 0.3);
+	width: 100%;
+	position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.title{
+	font-size: 42px;
+    position: relative;
+ 	text-align: center;
+}
+
+.divider{
+	margin: auto;
+	width: 40%;
+	border: 1px solid grey;
+}
+
+.subtext{
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.subscribe{
+	display: flex;
+	width: 100%;
+	position: absolute;
+    bottom: 10%;
+    justify-content: center;
+}
+
+.button{
+	margin-left: 10px;
+	border-radius: 5px;
+	background: darkred;
+	color: white;
+	padding: 3px;
+	cursor: pointer;
+}
