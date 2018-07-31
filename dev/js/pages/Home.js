@@ -23,9 +23,15 @@ export default class Home extends Component {
     }
 
     submitEmail() {
+        var me = this;
         if(this.isvalidEmail(this.state.email)) {
-            this.props.recordEmail(this.state.email);
-               
+            this.props.recordEmail(this.state.email).then(function(res) {
+                res = JSON.parse(res);
+
+                if(res.responseCode === 200) {
+                    me.input.value = "";
+                } 
+            });   
         }
         else {
             console.log('invalid input');
@@ -42,7 +48,7 @@ export default class Home extends Component {
                     <div className="subtext">ClimbingVan.com</div>
                 </div>
                 <div className="subscribe">
-                    <input placeholder="E-mail Address" onChange={(e) => this.handleChange("email", e)} />
+                    <input placeholder="E-mail Address" ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
                     <button className="button" onClick={this.submitEmail}>Subscribe</button>
                 </div>
             </div>
