@@ -19,7 +19,7 @@
 			
 			$res = new Response_Obj();
 		
-			if($this->isUnique($email)) {
+			if($this->isUniqueForSubscribers('email', $email)) {
 				$query ="INSERT INTO subscribers". "(email, time) ";
 				$values = "values ('$email', now())";
 
@@ -54,9 +54,7 @@
 			return htmlentities(strip_tags(trim($val)), ENT_QUOTES);
 		}
 
-		public function isUnique($value) {
-			$field = 'email';
-
+		public function isUniqueForSubscribers($field, $value) {
 			$sql = "SELECT 
 				`email` 
 				from
