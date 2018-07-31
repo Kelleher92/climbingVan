@@ -28,11 +28,12 @@
 			    $mail->Subject = 'Thank you for subscribing to ClimbingVan.com!';
 			    $mail->Body = "<div>
 			    					Hello friend,
-
+									<br /><br />
 			    					thank you for subscribing to ClimbingVan.com!
-
+									<br /><br />
+									<br /><br />
 									We'll be in touch when we're up and running,
-
+									<br /><br />
 									happy climbing!
 			    			   </div>";
 				

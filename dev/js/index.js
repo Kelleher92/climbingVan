@@ -23,9 +23,9 @@ class App extends Component {
                 res = JSON.parse(res);
 
                 if(res.responseCode === 200) {
-                    alert(res);
+                    alert(res.message);
                 } else {
-                    alert(res);
+                    alert(res.message);
                 }
             },
             error: function(res) {

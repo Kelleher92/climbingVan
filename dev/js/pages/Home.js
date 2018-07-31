@@ -24,7 +24,8 @@ export default class Home extends Component {
 
     submitEmail() {
         if(this.isvalidEmail(this.state.email)) {
-            this.props.recordEmail(this.state.email);   
+            this.props.recordEmail(this.state.email);
+               
         }
         else {
             console.log('invalid input');
