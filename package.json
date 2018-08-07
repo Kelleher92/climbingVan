@@ -1,5 +1,5 @@
 {
-  "name": "practicallyLimitless",
+  "name": "climbingVan",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -36,9 +36,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kelleher92/practicallyLimitless"
+    "url": "https://github.com/Kelleher92/climbingVan"
   },
   "author": "Ian Kelleher",
   "license": "ISC",
-  "homepage": "https://practically-limitless.herokuapp.com"
+  "homepage": "https://climbingVan.herokuapp.com"
 }
