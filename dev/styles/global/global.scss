@@ -5,22 +5,14 @@
 
 body{
 	font-size: 16px;
-    background-image: url('../../images/background.jpg');
-	font-family: "Raleway", sans-serif !important;
+    background: $background;
+    font-family: "Bebas Neue", Book, sans-serif !important;
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
-$steps: 51;
-@for $i from 0 to $steps{
-	.pl-buffer-bottom-#{$i} {
-		margin-bottom: #{$i}px!important;
-	}
-	.pl-buffer-top-#{$i} {
-		margin-top: #{$i}px!important;
-	}
-	.pl-buffer-right-#{$i} {
-		margin-right: #{$i}px!important;
-	}
-	.pl-buffer-left-#{$i} {
-		margin-left: #{$i}px!important;
-	}
+@font-face{
+    font-family: "Bebas Neue";
+    src: url("../../css/BebasNeue.otf") format("opentype");
 }

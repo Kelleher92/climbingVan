@@ -40,17 +40,26 @@ export default class Home extends Component {
 
 	render() {
 		return (
-            <div>               
-                <img className="logo" src="public/images/logo.png" />  
-                <div className="center">
-                    <div className="title">COMING SOON</div>
-                    <div className="divider"></div>
-                    <div className="subtext">ClimbingVan.com</div>
-                </div>
-                <div className="subscribe">
-                    <input placeholder="E-mail Address" ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
-                    <button className="button" onClick={this.submitEmail}>Subscribe</button>
-                </div>
+            <div> 
+                <div className="section page-top">
+                    <img className="logo" src="public/images/logo_subtext.png"/>  
+                </div>           
+                <div className="section">
+                    <div className="divider__container">
+                        <img className="divider"/>       
+                    </div>                    
+                </div>                    
+                <div className="section">
+                    <div className="divider__container">
+                        <img className="divider"/>       
+                    </div>              
+                </div>              
+                <div className="section">
+                    <div className="subscribe">
+                        <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
+                        <button className="button" onClick={this.submitEmail}>GO!</button>
+                    </div>
+                </div>              
             </div>
 		);
 	}
