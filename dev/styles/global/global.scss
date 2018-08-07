@@ -16,3 +16,19 @@ body{
     font-family: "Bebas Neue";
     src: url("../../css/BebasNeue.otf") format("opentype");
 }
+
+$steps: 51;
+@for $i from 0 to $steps{
+	.cv-buffer-bottom-#{$i} {
+		margin-bottom: #{$i}px !important;
+	}
+	.cv-buffer-top-#{$i} {
+		margin-top: #{$i}px !important;
+	}
+	.cv-buffer-right-#{$i} {
+		margin-right: #{$i}px !important;
+	}
+	.cv-buffer-left-#{$i} {
+		margin-left: #{$i}px !important;
+	}
+}
