@@ -67,13 +67,13 @@ export default class Home extends Component {
                             <div className="arrow"></div>
                             <div className="d-flex justify-content-around align-items-end">
                                 <div className="framed">
-                                    <img className="framedImage" src="public/images/group.jpg"/>
+                                    <img className="framed-image" src="public/images/group.jpg"/>
                                 </div> 
                                 <div className="framed">
                                     <img className="w-100" src="public/images/icons.png"/>
                                 </div>             
                                 <div className="framed">
-                                    <img className="framedImage" src="public/images/landscape.jpg"/>
+                                    <img className="framed-image" src="public/images/landscape.jpg"/>
                                 </div>       
                             </div>       
                         </div>                    
@@ -95,24 +95,55 @@ export default class Home extends Component {
                     <div className="section">
                         <div className="section-top">
                             <div className="arrow"></div>
-                            <div>Partner</div>       
+                            <div className="justify-content-center">
+                                <img className="fortunate" src="public/images/partner.png"/>
+                            </div>       
                         </div>              
                         <div className="section-bottom">
-                            <div>3 icons</div>       
+                            <div className="partner__container d-flex justify-content-center">
+                                <div className="partner">
+                                    <img className="partner-image" src="public/images/standout.png"/>
+                                </div>       
+                                <div className="partner">
+                                    <img className="partner-image" src="public/images/vacancies.png"/>
+                                </div>       
+                                <div className="partner">
+                                    <img className="partner-image" src="public/images/newmarkets.png"/>
+                                </div>       
+                            </div>       
                             <div className="tent"></div>
                         </div>              
                     </div>              
                     <div className="section">
                         <div className="section-top">
                             <div className="arrow"></div>
-                            <div>Subscribe</div>       
-                            <div className="subscribe">
-                                <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
-                                <button className="button" onClick={this.submitEmail}>GO!</button>
-                            </div>
+                            <div>
+                                <div className="d-flex justify-content-center align-items-end cv-buffer-bottom-40">
+                                    <div className="stripe"></div>
+                                    <img className="contact cv-buffer-bottom-10" src="public/images/contact.png"/>
+                                </div>
+                                <div className="cv-buffer-bottom-40">
+                                    <img className="w-25" src="public/images/eligible.png"/>
+                                </div>
+                                <div className="subscribe">
+                                    <div className="input-label cv-buffer-right-50">I would love to hear more!</div>
+                                    <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
+                                    <button className="button one-half-rem" onClick={this.submitEmail}>GO!</button>
+                                </div>
+                            </div>       
                         </div>              
                         <div className="section-bottom">
-                            <div>Social links</div>       
+                            <div className="d-flex justify-content-center">
+                                <div className="cv-buffer-top-40">
+                                    <img className="social" src="public/images/fbook.png"/>
+                                </div>
+                                <div className="cv-buffer-top-40">
+                                    <img className="social" src="public/images/insta.png"/>
+                                </div>
+                                <div className="cv-buffer-top-40">
+                                    <img className="social" src="public/images/mail.png"/>
+                                </div>
+                            </div>       
                             <div className="tent"></div>
                         </div>    
                     </div>  
