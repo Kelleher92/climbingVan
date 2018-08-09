@@ -40,18 +40,15 @@ export default class Home extends Component {
     }
 
     submitEmail() {
-        var me = this;
-        if(this.isvalidEmail(this.state.email)) {
-            this.props.recordEmail(this.state.email).then(function(res) {
-                res = JSON.parse(res);
+        var input = this.state.email;
+        this.input.value = "";
+        this.setState({email: ""});
 
-                if(res.responseCode === 200) {
-                    me.input.value = "";
-                } 
-            });   
+        if(this.isvalidEmail(input)) {
+            this.props.recordEmail(input);   
         }
         else {
-            console.log('invalid input');
+            alert('Invalid email-address entered.');
         }
     }
 
@@ -117,31 +114,31 @@ export default class Home extends Component {
                     <div className="section">
                         <div className="section-top">
                             <div className="arrow"></div>
-                            <div>
-                                <div className="d-flex justify-content-center align-items-end cv-buffer-bottom-40">
-                                    <div className="stripe"></div>
-                                    <img className="contact cv-buffer-bottom-10" src="public/images/contact.png"/>
-                                </div>
-                                <div className="cv-buffer-bottom-40">
-                                    <img className="w-25" src="public/images/eligible.png"/>
-                                </div>
-                                <div className="subscribe">
-                                    <div className="input-label cv-buffer-right-50">I would love to hear more!</div>
-                                    <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
-                                    <button className="button one-half-rem" onClick={this.submitEmail}>GO!</button>
-                                </div>
+                            <div >
+                                <div className="stripe"></div>
+                                <div className="justify-content-center">
+                                    <div className="subscribe__container">
+                                        <img className="w-100 cv-buffer-bottom-10" src="public/images/contact.png"/>
+                                        <img className="eligible" src="public/images/eligible.png"/>
+                                        <div className="subscribe">
+                                            <div className="input-label cv-buffer-right-50">I would love to hear more!</div>
+                                            <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
+                                            <button className="button one-half-rem" onClick={this.submitEmail}>GO!</button>
+                                        </div>
+                                    </div>       
+                                </div>       
                             </div>       
                         </div>              
                         <div className="section-bottom">
                             <div className="d-flex justify-content-center">
                                 <div className="cv-buffer-top-40">
-                                    <img className="social" src="public/images/fbook.png"/>
+                                    <a href="https://www.facebook.com/pg/ClimbingVan-992487814255685" target="_blank()"><img className="social" src="public/images/fbook.png"/></a>
                                 </div>
                                 <div className="cv-buffer-top-40">
-                                    <img className="social" src="public/images/insta.png"/>
+                                    <a href="https://www.instagram.com/climbing_van" target="_blank()"><img className="social" src="public/images/insta.png"/></a>
                                 </div>
                                 <div className="cv-buffer-top-40">
-                                    <img className="social" src="public/images/mail.png"/>
+                                    <a href="mailto:info@climbingvan.com"><img className="social" src="public/images/mail.png"/></a>
                                 </div>
                             </div>       
                             <div className="tent"></div>
