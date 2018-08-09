@@ -94,7 +94,9 @@
     background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
+	margin-top: 10px;
 	margin-bottom: 50px;
+	cursor: pointer;
 }
 
 .tent{
@@ -104,6 +106,7 @@
     background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;	
+	cursor: pointer;
 }
 
 .framed{
@@ -116,10 +119,11 @@
 }
 
 .icon{
-	margin-left: 15px;
 	height: 30px;
 	width: 30px;
 	cursor: pointer;
+	position: absolute;
+	right: 20%;
 }
 
 .icon__label{

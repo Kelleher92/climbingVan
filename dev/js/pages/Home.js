@@ -7,14 +7,12 @@ export default class Home extends Component {
 
         this.state = {
             email: null,
-            infoMessage: null,
-            showModal: false
+            infoMessage: "public/images/icons.png"
         }
 
         this.submitEmail = this.submitEmail.bind(this);
         this.onClickInfoOne = this.onClickInfoOne.bind(this);
         this.onClickInfoTwo = this.onClickInfoTwo.bind(this);
-        this.onClickMask = this.onClickMask.bind(this);
     }
 
     handleChange(name, e) {
@@ -27,16 +25,14 @@ export default class Home extends Component {
         return emailPattern.test(input);
     }
 
-    onClickMask() {
-        this.setState({showModal: false});
-    }
-
     onClickInfoOne() {
-        this.setState({infoMessage: "public/images/info1.png", showModal: true});
+        this.setState({infoMessage: "public/images/info1.png"});
+        this.scrollTo('framed');
     }
 
     onClickInfoTwo() {
-        this.setState({infoMessage: "public/images/info2.png", showModal: true});
+        this.setState({infoMessage: "public/images/info2.png"});
+        this.scrollTo('framed');
     }
 
     submitEmail() {
@@ -52,6 +48,14 @@ export default class Home extends Component {
         }
     }
 
+    scrollTo(input) {
+        var target = $('.' + input);
+
+        $('html, body').animate({
+            scrollTop: target.offset().top - 50
+        }, 1000);
+    }
+
 	render() {
 		return (
             <div> 
@@ -61,13 +65,13 @@ export default class Home extends Component {
                     </div>           
                     <div className="section">
                         <div className="section-top">
-                            <div className="arrow"></div>
+                            <div className="arrow" onClick={() => this.scrollTo('fortunate')}></div>
                             <div className="d-flex justify-content-around align-items-end">
                                 <div className="framed">
                                     <img className="framed-image" src="public/images/group.jpg"/>
                                 </div> 
                                 <div className="framed">
-                                    <img className="w-100" src="public/images/icons.png"/>
+                                    <img className="w-100" src={this.state.infoMessage}/>
                                 </div>             
                                 <div className="framed">
                                     <img className="framed-image" src="public/images/landscape.jpg"/>
@@ -75,23 +79,23 @@ export default class Home extends Component {
                             </div>       
                         </div>                    
                         <div className="section-bottom">
-                            <div className="">
+                            <div className="justify-content-center">
                                 <div className="icon__container d-flex justify-content-center">
                                     <div className="one-half-rem icon__label">WE PROVIDE OUR VAN PARTNERS WITH TOP-OF-THE-RANGE CLIMBING GEAR</div>     
-                                    <img className="icon" src="public/images/info.svg" onClick={this.onClickInfoOne}></img>       
+                                    <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoOne}></img></div>       
                                 </div>        
                                 <div className="icon__container d-flex justify-content-center">        
                                     <div className="one-half-rem icon__label">PRICELESS REGIONAL INFORMATION ON CLIMBING, CAMPING & LOTS MORE</div>       
-                                    <img className="icon" src="public/images/info.svg" onClick={this.onClickInfoTwo}></img>       
+                                    <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoTwo}></img></div>       
                                 </div>        
                                 <div className="icon__container one-half-rem icon__label">ALL READY FOR THE CLIMBER</div>       
                             </div>       
-                            <div className="tent"></div>
+                            <div className="tent" onClick={() => this.scrollTo('framed')}></div>
                         </div>                    
                     </div>                    
                     <div className="section">
                         <div className="section-top">
-                            <div className="arrow"></div>
+                            <div className="arrow" onClick={() => this.scrollTo('band')}></div>
                             <div className="justify-content-center">
                                 <img className="fortunate" src="public/images/partner.png"/>
                             </div>       
@@ -108,13 +112,13 @@ export default class Home extends Component {
                                     <img className="partner-image" src="public/images/newmarkets.png"/>
                                 </div>       
                             </div>       
-                            <div className="tent"></div>
+                            <div className="tent" onClick={() => this.scrollTo('fortunate')}></div>
                         </div>              
                     </div>              
                     <div className="section">
                         <div className="section-top">
-                            <div className="arrow"></div>
-                            <div >
+                            <div className="arrow" onClick={() => this.scrollTo('subscribe')}></div>
+                            <div className="band">
                                 <div className="stripe"></div>
                                 <div className="justify-content-center">
                                     <div className="subscribe__container">
@@ -141,22 +145,12 @@ export default class Home extends Component {
                                     <a href="mailto:info@climbingvan.com"><img className="social" src="public/images/mail.png"/></a>
                                 </div>
                             </div>       
-                            <div className="tent"></div>
+                            <div className="tent" onClick={() => this.scrollTo('band')}></div>
                         </div>    
                     </div>  
                     <div className="page-bottom">
                     </div>  
                 </div>        
-                {this.state.showModal ? (
-                    <div>
-                        <div className="modal__mask"></div>        
-                        <div className="modal__container" onClick={this.onClickMask}>
-                            <div className="modal__body">
-                                <img className="modal__frame" src={this.state.infoMessage}/>
-                            </div>        
-                        </div>  
-                    </div>  
-                ) : (<div></div>)}
             </div>
 		);
 	}
