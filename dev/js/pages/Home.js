@@ -122,7 +122,7 @@ export default class Home extends Component {
                                 <div className="stripe"></div>
                                 <div className="justify-content-center">
                                     <div className="subscribe__container">
-                                        <img className="w-100 cv-buffer-bottom-10" src="public/images/contact.png"/>
+                                        <img className="contact" src="public/images/contact.png"/>
                                         <img className="eligible" src="public/images/eligible.png"/>
                                         <div className="subscribe">
                                             <div className="input-label cv-buffer-right-50">I would love to hear more!</div>

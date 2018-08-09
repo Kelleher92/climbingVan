@@ -201,6 +201,8 @@
     position: absolute;
 	left: 0;
 	margin-top: 100px;
+	color: $background;
+	font-size: 1.6rem;
 }
 
 .fortunate{
@@ -212,4 +214,10 @@
 	width: 40%;
 	margin-top: 10px;
 	margin-bottom: 40px;
+}
+
+.contact{
+	width: 100%;
+	margin-bottom: 10px;
+	z-index: 10;
 }
