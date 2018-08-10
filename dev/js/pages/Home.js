@@ -27,12 +27,12 @@ export default class Home extends Component {
 
     onClickInfoOne() {
         this.setState({infoMessage: "public/images/info1.png"});
-        this.scrollTo('framed');
+        this.scrollTo('keyframe');
     }
 
     onClickInfoTwo() {
         this.setState({infoMessage: "public/images/info2.png"});
-        this.scrollTo('framed');
+        this.scrollTo('keyframe');
     }
 
     submitEmail() {
@@ -66,11 +66,11 @@ export default class Home extends Component {
                     <div className="section">
                         <div className="section-top">
                             <div className="arrow" onClick={() => this.scrollTo('fortunate')}></div>
-                            <div className="d-flex justify-content-around align-items-end">
+                            <div className="framed__container">
                                 <div className="framed">
                                     <img className="framed-image" src="public/images/group.jpg"/>
                                 </div> 
-                                <div className="framed">
+                                <div className="framed keyframe">
                                     <img className="w-100" src={this.state.infoMessage}/>
                                 </div>             
                                 <div className="framed">
@@ -80,17 +80,17 @@ export default class Home extends Component {
                         </div>                    
                         <div className="section-bottom">
                             <div className="justify-content-center">
-                                <div className="icon__container d-flex justify-content-center">
+                                <div className="icon__container justify-content-center">
                                     <div className="one-half-rem icon__label">WE PROVIDE OUR VAN PARTNERS WITH TOP-OF-THE-RANGE CLIMBING GEAR</div>     
                                     <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoOne}></img></div>       
                                 </div>        
-                                <div className="icon__container d-flex justify-content-center">        
+                                <div className="icon__container justify-content-center">        
                                     <div className="one-half-rem icon__label">PRICELESS REGIONAL INFORMATION ON CLIMBING, CAMPING & LOTS MORE</div>       
                                     <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoTwo}></img></div>       
                                 </div>        
                                 <div className="icon__container one-half-rem icon__label">ALL READY FOR THE CLIMBER</div>       
                             </div>       
-                            <div className="tent" onClick={() => this.scrollTo('framed')}></div>
+                            <div className="tent" onClick={() => this.scrollTo('keyframe')}></div>
                         </div>                    
                     </div>                    
                     <div className="section">
@@ -101,7 +101,7 @@ export default class Home extends Component {
                             </div>       
                         </div>              
                         <div className="section-bottom">
-                            <div className="partner__container d-flex justify-content-center">
+                            <div className="partner__container">
                                 <div className="partner">
                                     <img className="partner-image" src="public/images/standout.png"/>
                                 </div>       
@@ -122,12 +122,14 @@ export default class Home extends Component {
                                 <div className="stripe"></div>
                                 <div className="justify-content-center">
                                     <div className="subscribe__container">
-                                        <img className="contact" src="public/images/contact.png"/>
+                                        <img className="contact" src="public/images/contact.png" onClick={() => this.scrollTo('subscribe')}/>
                                         <img className="eligible" src="public/images/eligible.png"/>
                                         <div className="subscribe">
-                                            <div className="input-label cv-buffer-right-50">I would love to hear more!</div>
-                                            <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
-                                            <button className="button one-half-rem" onClick={this.submitEmail}>GO!</button>
+                                            <div className="input-label">I would love to hear more!</div>
+                                            <div>
+                                                <input className="text-input" placeholder="Your E-mail..." ref={el => this.input = el} onChange={(e) => this.handleChange("email", e)} />
+                                                <button className="button" onClick={this.submitEmail}>GO!</button>
+                                            </div>
                                         </div>
                                     </div>       
                                 </div>       

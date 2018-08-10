@@ -11,7 +11,7 @@
 
 .section-top{
 	padding: 10px;
-	max-width: 1100px;
+	max-width: $main-width;
 	margin: auto;
 	justify-content: center;
 	margin-bottom: 50px;
@@ -68,9 +68,11 @@
 	font-family: "Montserrat" !important;
 	font-style: italic;
 	font-weight: bold;
+	height: 66px;
 }
 
 .input-label{
+	margin-right: 50px;
 	font-family: "Montserrat" !important;
 	font-weight: bold;
 }
@@ -120,6 +122,12 @@
 	border: 2.75px solid $dark-red;
 }
 
+.framed__container{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
 .icon{
 	height: 30px;
 	width: 30px;
@@ -134,7 +142,9 @@
 }
 
 .icon__container{
+	display: flex;
 	padding: 15px;
+	justify-content: center;
 }
 
 .modal__mask{
@@ -178,8 +188,10 @@
 }
 
 .partner__container{
-	max-width: 1100px;
+	max-width: $main-width;
 	margin: auto;
+	display: flex;
+	justify-content: center;
 }
 
 .partner{
@@ -222,4 +234,133 @@
 	width: 100%;
 	margin-bottom: 10px;
 	z-index: 10;
+	cursor: pointer;
+}
+
+@media (max-width: $mobile-break-point){
+	.main{
+		height: 100%;
+		width: 100%;
+	}
+
+	.section{
+		min-height: 90vh;
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-top{
+		padding: 10px;
+		max-width: $main-width;
+		margin: auto;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	.section-bottom{
+		background: $trans-red;
+		width: 100%;
+	}
+
+	.page-top{	
+		background-position: right;
+	}
+
+	.page-bottom{	
+		width: 100%;
+		height: 50px;
+	}
+
+	.logo{
+		width: 50vw;
+	    left: 30px;
+	    top: 30px;
+	}
+
+	.subscribe__container{
+		align-items: center;
+		margin: 0;
+	}
+
+	.subscribe{
+		display: block;
+		line-height: unset;
+	}
+
+	.text-input{
+		padding: 20px 10px;
+	}
+
+	.input-label{
+		margin-right: 0px;
+		margin-bottom: 5px;
+	}
+
+	.arrow{
+		height: 50px;
+		margin-top: 10px;
+		margin-bottom: 30px;
+	}
+
+	.tent{
+		height: 50px;
+	}
+
+	.framed{
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.framed__container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.icon{
+		right: 50%;
+		transform: translateX(50%);
+	}
+
+	.icon__container{
+		display: block;
+		padding: 30px;
+	}
+
+	.social{
+		height: 60px;
+		margin: 30px;
+		cursor: pointer;
+	}
+
+	.partner__container{
+		display: block;
+		width: 100%;
+		padding-top: 20px;
+		padding-bottom: 40px;
+	}
+
+	.partner{
+		width: 100%;
+	}
+
+	.stripe{
+		margin-top: -5px;
+	}
+
+	.fortunate{
+		width: 100%;
+	}
+
+	.eligible{
+		width: 100%;
+		padding: 30px;
+		margin: 0;
+	}
+
+	.contact{
+		width: 100%;
+		margin-bottom: 10px;
+		z-index: 10;
+	}
 }
