@@ -26,12 +26,12 @@ export default class Home extends Component {
     }
 
     onClickInfoOne() {
-        this.setState({infoMessage: "public/images/info1.png"});
+        this.setState({infoMessage: "public/images/info-1.png"});
         this.scrollTo('keyframe');
     }
 
     onClickInfoTwo() {
-        this.setState({infoMessage: "public/images/info2.png"});
+        this.setState({infoMessage: "public/images/info-2.png"});
         this.scrollTo('keyframe');
     }
 
