@@ -66,53 +66,39 @@ export default class Home extends Component {
                     <div className="section">
                         <div className="section-top">
                             <div className="arrow" onClick={() => this.scrollTo('fortunate')}></div>
-                            <div className="framed__container">
-                                <div className="framed">
-                                    <img className="framed-image" src="public/images/group.jpg"/>
-                                </div> 
-                                <div className="framed keyframe">
-                                    <img className="w-100" src={this.state.infoMessage}/>
-                                </div>             
-                                <div className="framed">
-                                    <img className="framed-image" src="public/images/landscape.jpg"/>
-                                </div>       
-                            </div>       
-                        </div>                    
-                        <div className="section-bottom">
-                            <div className="justify-content-center">
-                                <div className="icon__container justify-content-center">
-                                    <div className="one-half-rem icon__label">WE PROVIDE OUR VAN PARTNERS WITH TOP-OF-THE-RANGE CLIMBING GEAR</div>     
-                                    <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoOne}></img></div>       
-                                </div>        
-                                <div className="icon__container justify-content-center">        
-                                    <div className="one-half-rem icon__label">PRICELESS REGIONAL INFORMATION ON CLIMBING, CAMPING & LOTS MORE</div>       
-                                    <div className=""><img className="icon" src="public/images/info.svg" onClick={this.onClickInfoTwo}></img></div>       
-                                </div>        
-                                <div className="icon__container one-half-rem icon__label">ALL READY FOR THE CLIMBER</div>       
-                            </div>       
-                            <div className="tent" onClick={() => this.scrollTo('keyframe')}></div>
-                        </div>                    
-                    </div>                    
-                    <div className="section">
+                            <div className="together">
+                                <div className="icon__label">CONNECTING WHAT BELONGS TOGETHER</div>
+                                <div className="framed__container">
+                                    <div className="framed">
+                                        <div className="framed__image first"></div> 
+                                    </div>
+                                    <div className="framed">                                
+                                        <div className="framed__image second"></div>             
+                                    </div>
+                                    <div className="framed">                                
+                                        <div className="framed__image third"></div>        
+                                    </div>
+                                    <div className="framed">                                
+                                        <div className="framed__image fourth"></div>       
+                                    </div>
+                                </div>         
+                            </div>   
+                        </div>              
                         <div className="section-top">
-                            <div className="arrow" onClick={() => this.scrollTo('band')}></div>
                             <div className="justify-content-center">
                                 <img className="fortunate" src="public/images/partner.png"/>
                             </div>       
-                        </div>              
-                        <div className="section-bottom">
                             <div className="partner__container">
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/standout.png"/>
+                                    <img className="partner-image" src="public/images/z1.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/vacancies.png"/>
+                                    <img className="partner-image" src="public/images/z2.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/newmarkets.png"/>
+                                    <img className="partner-image" src="public/images/z3.png"/>
                                 </div>       
                             </div>       
-                            <div className="tent" onClick={() => this.scrollTo('fortunate')}></div>
                         </div>              
                     </div>              
                     <div className="section">
@@ -147,7 +133,7 @@ export default class Home extends Component {
                                     <a href="mailto:info@climbingvan.com"><img className="social" src="public/images/mail.png"/></a>
                                 </div>
                             </div>       
-                            <div className="tent" onClick={() => this.scrollTo('band')}></div>
+                            <div className="tent" onClick={() => this.scrollTo('together')}></div>
                         </div>    
                     </div>  
                     <div className="page-bottom">

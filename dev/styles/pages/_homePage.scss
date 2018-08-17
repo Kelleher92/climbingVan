@@ -4,7 +4,7 @@
 }
 
 .section{
-	min-height: 700px;
+	min-height: 100vh;
 	width: 100%;
 	text-align: center;
 }
@@ -14,7 +14,7 @@
 	max-width: $main-width;
 	margin: auto;
 	justify-content: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 
 .section-bottom{
@@ -90,7 +90,7 @@
 }
 
 .arrow{
-	height: 70px;
+	height: 60px;
     width: 100%;
 	background-image: url('../../images/divider.png');
     background-size: contain;
@@ -103,7 +103,7 @@
 }
 
 .tent{
-	height: 70px;
+	height: 60px;
     width: 100%;
 	background-image: url('../../images/tent.png');
     background-size: contain;
@@ -113,19 +113,53 @@
 	z-index: 10;
 }
 
-.framed{
-	width: 25%;
-}
-
-.framed-image{
-	width: 100%;
-	border: 2.75px solid $dark-red;
-}
-
 .framed__container{
+	max-width: $main-width;
+	padding-top: 60px;
+	padding-bottom: 140px;
+	margin: auto;
 	display: flex;
-	justify-content: space-around;
-	align-items: flex-end;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.framed{
+	height: 500px;
+	width: 275px;
+}
+
+.framed__image{
+	&.first{
+		background-image: url('../../images/a1.png');
+		&:hover{
+			background-image: url('../../images/c1.png');
+		}
+	}
+	&.second{
+		background-image: url('../../images/a2.png');
+		&:hover{
+			background-image: url('../../images/c2.png');
+		}
+	}
+	&.third{
+		background-image: url('../../images/a3.png');
+		&:hover{
+			background-image: url('../../images/c3.png');
+		}
+	}
+	&.fourth{
+		background-image: url('../../images/a4.png');
+		&:hover{
+			background-image: url('../../images/c4.png');
+		}
+	}
+	
+	cursor: pointer;
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;	
 }
 
 .icon{
@@ -137,48 +171,14 @@
 }
 
 .icon__label{
-	color: $white;
-	line-height: 30px;
+	color: $dark-grey;
+	font-size: 3rem;
 }
 
 .icon__container{
 	display: flex;
 	padding: 15px;
 	justify-content: center;
-}
-
-.modal__mask{
-	width: 100%;
-	height: 100%;
-	background: $dark-grey;
-	opacity: 0.85;
-	position: fixed;
-	left: 0;
-	top: 0;	
-}
-
-.modal__container{
-	position: fixed;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-}
-
-.modal__body{
-	background: $white;
-	padding: 10px;
-	border-radius: 5px;
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	width: 400px;
-}
-
-.modal__frame{
-	width: 100%;
-	height: 100%;
 }
 
 .social{
@@ -191,21 +191,17 @@
 	max-width: $main-width;
 	margin: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .partner{
-	width: 33%;
-	height: 400px;
-	margin-top: 40px;
-	margin-bottom: -50px;
+	width: 30%;
+	margin-top: 80px;
 }
 
 .partner-image{
 	width: 100%;
 	height: 100%;
-	padding-left: 40px;
-	padding-right: 40px;
 }
 
 .stripe{
@@ -214,14 +210,13 @@
 	background: $trans-red;
     position: absolute;
 	left: 0;
-	margin-top: 100px;
+	margin-top: 110px;
 	color: $background;
 	font-size: 1.6rem;
 }
 
 .fortunate{
 	width: 800px;
-	margin-bottom: -70px;
 }
 
 .eligible{
@@ -237,11 +232,17 @@
 	cursor: pointer;
 }
 
+.band{
+	margin-top: -20px;
+}
+
 @media (max-width: $mobile-break-point){
 	.section{
 		min-height: 90vh;
-		width: 100%;
-		text-align: center;
+	}
+
+	.section-top{
+		margin: 0;
 	}
 
 	.page-top{	
@@ -262,6 +263,7 @@
 	.subscribe{
 		display: block;
 		line-height: unset;
+		height: 120px;
 	}
 
 	.text-input{
@@ -283,15 +285,41 @@
 		height: 50px;
 	}
 
-	.framed{
-		width: 90%;
-		margin-bottom: 20px;
+	.framed__container{
+		display: block;
+		padding-bottom: 0;
 	}
 
-	.framed__container{
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
+	.framed{
+		margin: auto;
+		margin-bottom: 30px;
+	}
+
+	.framed__image{
+		&.first{
+			background-image: url('../../images/b1.png');
+			&:hover{
+				background-image: url('../../images/b1.png');
+			}
+		}
+		&.second{
+			background-image: url('../../images/b2.png');
+			&:hover{
+				background-image: url('../../images/b2.png');
+			}
+		}
+		&.third{
+			background-image: url('../../images/b3.png');
+			&:hover{
+				background-image: url('../../images/b3.png');
+			}
+		}
+		&.fourth{
+			background-image: url('../../images/b4.png');
+			&:hover{
+				background-image: url('../../images/b4.png');
+			}
+		}
 	}
 
 	.icon{
@@ -307,12 +335,11 @@
 	.partner__container{
 		display: block;
 		width: 100%;
-		padding-top: 20px;
-		padding-bottom: 40px;
 	}
 
 	.partner{
-		width: 100%;
+		width: 307px;
+		margin: auto;
 	}
 
 	.stripe{
@@ -326,6 +353,10 @@
 	.eligible{
 		width: 100%;
 		padding: 30px;
+		margin: 0;
+	}
+
+	.band{
 		margin: 0;
 	}
 }
