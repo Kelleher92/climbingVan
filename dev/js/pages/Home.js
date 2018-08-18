@@ -15,6 +15,17 @@ export default class Home extends Component {
         this.onClickInfoTwo = this.onClickInfoTwo.bind(this);
     }
 
+    componentDidMount() {
+        $('.fb').on('click', function() {
+            setTimeout(function () {
+                $('<a href="https://www.facebook.com/pg/992487814255685" target="blank"></a>')[0].click();
+            }, 25);    
+            $('<a href="fb://pg/992487814255685" target="blank"></a>')[0].click();    
+        });
+
+        console.log($('.fb'));
+    }
+
     handleChange(name, e) {
         this.setState({[name]: e.target.value});
     }
@@ -55,7 +66,7 @@ export default class Home extends Component {
             scrollTop: target.offset().top - 50
         }, 1000);
     }
-
+    
 	render() {
 		return (
             <div> 
@@ -124,7 +135,7 @@ export default class Home extends Component {
                         <div className="section-bottom">
                             <div className="d-flex justify-content-center">
                                 <div className="cv-buffer-top-40">
-                                    <a href="https://www.facebook.com/pg/ClimbingVan-992487814255685" target="_blank()"><img className="social" src="public/images/fbook.png"/></a>
+                                    <a className="fb"><img className="social" src="public/images/fbook.png"/></a>
                                 </div>
                                 <div className="cv-buffer-top-40">
                                     <a href="https://www.instagram.com/climbing_van" target="_blank()"><img className="social" src="public/images/insta.png"/></a>
