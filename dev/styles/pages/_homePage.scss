@@ -115,7 +115,7 @@
 
 .framed__container{
 	max-width: $main-width;
-	padding-top: 60px;
+	padding: 30px;
 	padding-bottom: 140px;
 	margin: auto;
 	display: flex;
@@ -124,39 +124,34 @@
 }
 
 .framed{
-	height: 500px;
-	width: 275px;
-}
-
-.framed__image{
 	&.first{
-		background-image: url('../../images/a1.png');
+		background-image: url('../../images/a1-van.png');
 		&:hover{
-			background-image: url('../../images/c1.png');
+			background-image: url('../../images/b1-van.png');
 		}
 	}
 	&.second{
-		background-image: url('../../images/a2.png');
+		background-image: url('../../images/a2-climber.png');
 		&:hover{
-			background-image: url('../../images/c2.png');
+			background-image: url('../../images/b2-climber.png');
 		}
 	}
 	&.third{
-		background-image: url('../../images/a3.png');
+		background-image: url('../../images/a3-gear.png');
 		&:hover{
-			background-image: url('../../images/c3.png');
+			background-image: url('../../images/b3-gear.png');
 		}
 	}
 	&.fourth{
-		background-image: url('../../images/a4.png');
+		background-image: url('../../images/a4-info.png');
 		&:hover{
-			background-image: url('../../images/c4.png');
+			background-image: url('../../images/b4-info.png');
 		}
 	}
 	
+	height: 400px;
+	width: 220px;
 	cursor: pointer;
-	height: 100%;
-	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;	
@@ -171,8 +166,7 @@
 }
 
 .icon__label{
-	color: $dark-grey;
-	font-size: 3rem;
+	margin-bottom: 80px;
 }
 
 .icon__container{
@@ -195,7 +189,7 @@
 }
 
 .partner{
-	width: 30%;
+	width: 28%;
 	margin-top: 80px;
 }
 
@@ -210,7 +204,7 @@
 	background: $trans-red;
     position: absolute;
 	left: 0;
-	margin-top: 110px;
+	margin-top: 100px;
 	color: $background;
 	font-size: 1.6rem;
 }
@@ -287,39 +281,45 @@
 
 	.framed__container{
 		display: block;
-		padding-bottom: 0;
+		padding: 0;
 	}
 
 	.framed{
-		margin: auto;
-		margin-bottom: 30px;
-	}
-
-	.framed__image{
 		&.first{
-			background-image: url('../../images/b1.png');
+			float: left;
+			margin-bottom: -70px;
+			background-image: url('../../images/m1-van.png');
 			&:hover{
-				background-image: url('../../images/b1.png');
+				background-image: url('../../images/m1-van.png');
 			}
 		}
 		&.second{
-			background-image: url('../../images/b2.png');
+			float: right;
+			margin-bottom: -70px;
+			background-image: url('../../images/m2-climber.png');
 			&:hover{
-				background-image: url('../../images/b2.png');
+				background-image: url('../../images/m2-climber.png');
 			}
 		}
 		&.third{
-			background-image: url('../../images/b3.png');
+			float: left;
+			margin-bottom: 50px;
+			background-image: url('../../images/m3-gear.png');
 			&:hover{
-				background-image: url('../../images/b3.png');
+				background-image: url('../../images/m3-gear.png');
 			}
 		}
 		&.fourth{
-			background-image: url('../../images/b4.png');
+			float: right;
+			margin-bottom: 50px;
+			background-image: url('../../images/m4-info.png');
 			&:hover{
-				background-image: url('../../images/b4.png');
+				background-image: url('../../images/m4-info.png');
 			}
 		}
+
+		width: 50%;
+		height: 100vw;
 	}
 
 	.icon{
@@ -332,18 +332,13 @@
 		padding: 30px;
 	}
 
-	.partner__container{
-		display: block;
-		width: 100%;
-	}
-
 	.partner{
-		width: 307px;
-		margin: auto;
+		width: 30%;
+		margin-top: 30px;
 	}
 
 	.stripe{
-		margin-top: -5px;
+		margin-top: -8px;
 	}
 
 	.fortunate{

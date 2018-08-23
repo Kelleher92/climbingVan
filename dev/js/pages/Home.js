@@ -22,8 +22,6 @@ export default class Home extends Component {
             }, 25);    
             $('<a href="fb://pg/992487814255685" target="blank"></a>')[0].click();    
         });
-
-        console.log($('.fb'));
     }
 
     handleChange(name, e) {
@@ -78,20 +76,15 @@ export default class Home extends Component {
                         <div className="section-top">
                             <div className="arrow" onClick={() => this.scrollTo('fortunate')}></div>
                             <div className="together">
-                                <div className="icon__label">CONNECTING WHAT BELONGS TOGETHER</div>
+                                <div className="icon__label">
+                                    <img className="w-100" src="public/images/header.png"/>
+                                </div>
+                                <div className="two-rem desktop-only">HOVER FOR INFORMATION</div>
                                 <div className="framed__container">
-                                    <div className="framed">
-                                        <div className="framed__image first"></div> 
-                                    </div>
-                                    <div className="framed">                                
-                                        <div className="framed__image second"></div>             
-                                    </div>
-                                    <div className="framed">                                
-                                        <div className="framed__image third"></div>        
-                                    </div>
-                                    <div className="framed">                                
-                                        <div className="framed__image fourth"></div>       
-                                    </div>
+                                    <div className="framed first"></div> 
+                                    <div className="framed second"></div>             
+                                    <div className="framed third"></div>        
+                                    <div className="framed fourth"></div>       
                                 </div>         
                             </div>   
                         </div>              
@@ -101,13 +94,13 @@ export default class Home extends Component {
                             </div>       
                             <div className="partner__container">
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/z1.png"/>
+                                    <img className="partner-image" src="public/images/c1-standout.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/z2.png"/>
+                                    <img className="partner-image" src="public/images/c2-vacancies.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/z3.png"/>
+                                    <img className="partner-image" src="public/images/c3-markets.png"/>
                                 </div>       
                             </div>       
                         </div>              
