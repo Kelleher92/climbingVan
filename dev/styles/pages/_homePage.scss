@@ -285,12 +285,18 @@
 
 	.framed{
 		&.first{
-			border-right: 1px solid grey;
 			float: left;
 			margin-bottom: -70px;
 			background-image: url('../../images/m1-van.png');
 			&:hover{
 				background-image: url('../../images/m1-van.png');
+			}
+			&:after {
+			    content: "";
+				height: 25%;
+				display: block;
+				margin-top: 170px;
+				border-right: 1px solid grey;
 			}
 		}
 		&.second{
@@ -302,12 +308,18 @@
 			}
 		}
 		&.third{
-			border-right: 1px solid grey;
 			float: left;
 			margin-bottom: 50px;
 			background-image: url('../../images/m3-gear.png');
 			&:hover{
 				background-image: url('../../images/m3-gear.png');
+			}
+			&:after {
+			    content: "";
+				height: 55%;
+				display: block;
+				margin-top: 170px;
+				border-right: 1px solid grey;
 			}
 		}
 		&.fourth{
