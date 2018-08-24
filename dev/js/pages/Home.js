@@ -79,13 +79,13 @@ export default class Home extends Component {
                                 <div className="icon__label">
                                     <img className="w-100" src="public/images/header.png"/>
                                 </div>
-                                <div className="two-rem desktop-only">HOVER FOR INFORMATION</div>
                                 <div className="framed__container">
                                     <div className="framed first"></div> 
                                     <div className="framed second"></div>             
-                                    <div className="framed third"></div>        
+                                    <div className="framed third"></div>
                                     <div className="framed fourth"></div>       
                                 </div>         
+                                <div className="two-rem desktop-only">HOVER FOR INFORMATION</div>
                             </div>   
                         </div>              
                         <div className="section-top">

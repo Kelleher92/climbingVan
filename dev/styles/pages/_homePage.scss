@@ -115,8 +115,7 @@
 
 .framed__container{
 	max-width: $main-width;
-	padding: 30px;
-	padding-bottom: 140px;
+	padding-bottom: 30px;
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
@@ -286,6 +285,7 @@
 
 	.framed{
 		&.first{
+			border-right: 1px solid grey;
 			float: left;
 			margin-bottom: -70px;
 			background-image: url('../../images/m1-van.png');
@@ -302,6 +302,7 @@
 			}
 		}
 		&.third{
+			border-right: 1px solid grey;
 			float: left;
 			margin-bottom: 50px;
 			background-image: url('../../images/m3-gear.png');
