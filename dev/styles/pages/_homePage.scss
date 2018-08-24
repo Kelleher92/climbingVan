@@ -292,6 +292,8 @@
 				background-image: url('../../images/m1-van.png');
 			}
 			&:after {
+				position: relative;
+				left: 5px;
 			    content: "";
 				height: 25%;
 				display: block;
@@ -315,6 +317,8 @@
 				background-image: url('../../images/m3-gear.png');
 			}
 			&:after {
+				position: relative;
+				left: 5px;
 			    content: "";
 				height: 55%;
 				display: block;
@@ -331,7 +335,8 @@
 			}
 		}
 
-		width: 50%;
+		width: 49%;
+		padding: 5px;
 		height: 100vw;
 	}
 
