@@ -85,7 +85,9 @@ export default class Home extends Component {
                                     <div className="framed third"></div>
                                     <div className="framed fourth"></div>       
                                 </div>         
-                                <div className="two-rem desktop-only">HOVER FOR INFORMATION</div>
+                                <div className="desktop-only">
+                                    <img className="w-25" src="public/images/hover.png"/>
+                                </div>
                             </div>   
                         </div>              
                         <div className="section-top">
