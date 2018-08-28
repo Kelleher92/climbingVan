@@ -61,7 +61,7 @@ export default class Home extends Component {
         var target = $('.' + input);
 
         $('html, body').animate({
-            scrollTop: target.offset().top - 50
+            scrollTop: target.offset().top
         }, 1000);
     }
     
@@ -80,13 +80,21 @@ export default class Home extends Component {
                                     <img className="w-100" src="public/images/header.png"/>
                                 </div>
                                 <div className="framed__container">
-                                    <div className="framed first"></div> 
-                                    <div className="framed second"></div>             
-                                    <div className="framed third"></div>
-                                    <div className="framed fourth"></div>       
+                                    <div className="framed first">
+                                        <div className="first"></div>
+                                    </div> 
+                                    <div className="framed second">
+                                        <div className="second"></div>
+                                    </div>             
+                                    <div className="framed third">
+                                        <div className="third"></div>
+                                    </div>
+                                    <div className="framed fourth">
+                                        <div className="fourth"></div>
+                                    </div>       
                                 </div>         
                                 <div className="desktop-only">
-                                    <img className="w-25" src="public/images/hover.png"/>
+                                    <img className="w-20" src="public/images/hover.png"/>
                                 </div>
                             </div>   
                         </div>              
