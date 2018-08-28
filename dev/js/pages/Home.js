@@ -74,7 +74,7 @@ export default class Home extends Component {
                     </div>           
                     <div className="section">
                         <div className="section-top">
-                            <div className="arrow" onClick={() => this.scrollTo('fortunate')}></div>
+                            <div className="arrow" onClick={() => this.scrollTo('together')}></div>
                             <div className="together">
                                 <div className="icon__label">
                                     <img className="w-100" src="public/images/header.png"/>
@@ -96,13 +96,13 @@ export default class Home extends Component {
                             </div>       
                             <div className="partner__container">
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/c1-standout.png"/>
+                                    <img className="partner-image" src="public/images/c1.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/c2-vacancies.png"/>
+                                    <img className="partner-image" src="public/images/c2.png"/>
                                 </div>       
                                 <div className="partner">
-                                    <img className="partner-image" src="public/images/c3-markets.png"/>
+                                    <img className="partner-image" src="public/images/c3.png"/>
                                 </div>       
                             </div>       
                         </div>              
@@ -130,13 +130,13 @@ export default class Home extends Component {
                         <div className="section-bottom">
                             <div className="d-flex justify-content-center">
                                 <div className="cv-buffer-top-40">
-                                    <a className="fb"><img className="social" src="public/images/fbook.png"/></a>
+                                    {/*<a className="fb"><img className="social" src="public/images/fbook.png"/></a>*/}
                                 </div>
                                 <div className="cv-buffer-top-40">
-                                    <a href="https://www.instagram.com/climbing_van" target="_blank()"><img className="social" src="public/images/insta.png"/></a>
+                                    {/*<a href="https://www.instagram.com/climbing_van" target="_blank()"><img className="social" src="public/images/insta.png"/></a>*/}
                                 </div>
                                 <div className="cv-buffer-top-40">
-                                    <a href="mailto:info@climbingvan.com"><img className="social" src="public/images/mail.png"/></a>
+                                    {/*<a href="mailto:info@climbingvan.com"><img className="social" src="public/images/mail.png"/></a>*/}
                                 </div>
                             </div>       
                             <div className="tent" onClick={() => this.scrollTo('together')}></div>
