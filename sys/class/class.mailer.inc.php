@@ -42,10 +42,9 @@
 
 			    $mail->clearAddresses();              
 			    $mail->addAddress('iankelleher92@gmail.com');              
+			    $mail->isHTML(false);                                  // Set email format to HTML
 			    $mail->Subject = 'New ClimbingVan.com subscriber!';
-			    $mail->Body = 	"<div>
-									".$email." has just subscribed and has been added to the database.
-			    				</div>";
+			    $mail->Body = $email." has just subscribed and has been added to the database.";
 			    $mail->send();
 			} catch (Exception $e) {
 			    echo 'Mailer Error: ' . $mail->ErrorInfo;
