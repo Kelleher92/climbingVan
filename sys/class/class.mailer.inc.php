@@ -20,28 +20,30 @@
 			    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 			    $mail->Port = getenv('EMAIL_PORT');                   // TCP port to connect to
 			    //Recipients
-			    $mail->setFrom('info@climbingvan.com', 'ClimbingVan.com');
+			    $mail->setFrom('iankelleher92@gmail.com', 'ClimbingVan.com');
 			    $mail->addAddress($email);              
-			    $mail->addReplyTo('info@climbingvan.com', 'Information');
+			    $mail->addReplyTo('iankelleher92@gmail.com', 'Information');
 			   
 			    //Content
 			    $mail->isHTML(true);                                  // Set email format to HTML
 			    $mail->Subject = 'Thank you for subscribing to ClimbingVan.com!';
 			    $mail->Body = 	"<div>
-				    			    Hi there,
+				    			    Hi Partner,
 										<br /><br />
-									Thanks for expressing your interest in ClimbingVan. Now that you have, we will send you updates about our progress - we know you are as excited as we are for our launch.
+									thanks for expressing an interest in ClimbingVan.
 										<br /><br />
-									We would also love to know a little more about you. If you think you'd be a suitable partner for this exciting new service, simply reply to us here with your details - we would love to have a chat.
+									Now that you have, we will send you updates about our progress - we know you are as excited as us for our launch.
 										<br /><br />
 									Your ClimbingVan Crew,
 										<br /><br />
 									Stefan & Conor
+										<br /><br />
+									<img src="."public/images/slogo.png"."
 								</div>";
 			    $mail->send();
 
 			    $mail->clearAddresses();              
-			    $mail->addAddress('info@climbingvan.com');              
+			    $mail->addAddress('iankelleher92@gmail.com');              
 			    $mail->isHTML(false);                                  // Set email format to HTML
 			    $mail->Subject = 'New ClimbingVan.com subscriber!';
 			    $mail->Body = $email." has just subscribed and has been added to the database.";
