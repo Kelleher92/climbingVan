@@ -42,7 +42,7 @@
 										<br /><br />
 									Stefan & Conor
 										<br /><br />
-									<img src='logo'/>
+									<img src='cid:logo'/>
 								</div>";
 			    $mail->send();
 
