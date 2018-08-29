@@ -29,7 +29,7 @@
 				    $this->getDb()->commit();
 
 				    $mh = new Mailer();
-				    $mh->sendVerificationEmail($email);
+				    $mh->sendSubscriptionEmails($email);
 
 				    $res->responseCode = 200;
 				    $res->message = "Subscription was successful. Check your inbox!";

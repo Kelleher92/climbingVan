@@ -59,7 +59,7 @@
 
 .text-input{
 	border-radius: 10px;
-	padding: 30px 10px;
+	padding: 0 10px;
 	border: 3px solid $trans-red;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
@@ -68,7 +68,8 @@
 	font-family: "Montserrat" !important;
 	font-style: italic;
 	font-weight: bold;
-	height: 66px;
+	height: 65px;
+	width: 200px;
 }
 
 .input-label{
@@ -86,7 +87,7 @@
 	cursor: pointer;
 	font-family: "Montserrat" !important;
 	font-weight: bolder;
-	height: 66px;
+	height: 65px;
 }
 
 .arrow{
@@ -263,10 +264,6 @@
 		display: block;
 		line-height: unset;
 		height: 120px;
-	}
-
-	.text-input{
-		padding: 20px 10px;
 	}
 
 	.input-label{
