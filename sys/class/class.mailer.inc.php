@@ -39,7 +39,8 @@
 										<br /><br />
 									Stefan & Conor
 										<br /><br />
-									<img src='cid:logo'/>
+										<br /><br />
+									<img style='width:200px;height:177px;' src='cid:logo'/>
 								</div>";
 			    $mail->send();
 
