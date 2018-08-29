@@ -26,6 +26,7 @@
 			   
 			    //Content
 			    $mail->isHTML(true);                                  // Set email format to HTML
+			    $mail->AddEmbeddedImage('public/images/slogo.png', 'logo');
 			    $mail->Subject = 'Thank you for subscribing to ClimbingVan.com!';
 			    $mail->Body = 	"<div>
 				    			    Hi Partner,
@@ -38,10 +39,8 @@
 										<br /><br />
 									Stefan & Conor
 										<br /><br />
-									<img src='public/images/slogo.png'/>
+									<img src='logo'/>
 								</div>";
-
-								echo $mail->Body;
 			    $mail->send();
 
 			    $mail->clearAddresses();              
