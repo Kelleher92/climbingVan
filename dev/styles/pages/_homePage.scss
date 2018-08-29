@@ -69,7 +69,7 @@
 	font-style: italic;
 	font-weight: bold;
 	height: 65px;
-	width: 200px;
+	width: 300px;
 }
 
 .input-label{
@@ -270,6 +270,10 @@
 	.input-label{
 		margin-right: 0px;
 		margin-bottom: 5px;
+	}
+
+	.text-input{
+		width: 200px;
 	}
 
 	.arrow{
