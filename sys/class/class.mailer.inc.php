@@ -20,9 +20,9 @@
 			    $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 			    $mail->Port = getenv('EMAIL_PORT');                   // TCP port to connect to
 			    //Recipients
-			    $mail->setFrom('iankelleher92@gmail.com', 'ClimbingVan.com');
+			    $mail->setFrom('info@climbingvan.com', 'ClimbingVan.com');
 			    $mail->addAddress($email);              
-			    $mail->addReplyTo('iankelleher92@gmail.com', 'Information');
+			    $mail->addReplyTo('info@climbingvan.com', 'Information');
 			   
 			    //Content
 			    $mail->isHTML(true);                                  // Set email format to HTML
@@ -41,7 +41,7 @@
 			    $mail->send();
 
 			    $mail->clearAddresses();              
-			    $mail->addAddress('iankelleher92@gmail.com');              
+			    $mail->addAddress('info@climbingvan.com');              
 			    $mail->isHTML(false);                                  // Set email format to HTML
 			    $mail->Subject = 'New ClimbingVan.com subscriber!';
 			    $mail->Body = $email." has just subscribed and has been added to the database.";
