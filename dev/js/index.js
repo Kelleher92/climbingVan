@@ -20,7 +20,6 @@ class App extends Component {
             },
             url: 'public/process.php',
             success: function(res) {
-                console.log(res);
                 res = JSON.parse(res);
 
                 if(res.responseCode === 200) {

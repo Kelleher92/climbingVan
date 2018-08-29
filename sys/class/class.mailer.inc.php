@@ -26,7 +26,7 @@
 			   
 			    //Content
 			    $mail->isHTML(true);                                  // Set email format to HTML
-			    $mail->AddEmbeddedImage($_SERVER['SERVER_NAME'].'/public/images/slogo.png', 'logo');
+			    $mail->AddEmbeddedImage($_SERVER['DOCUMENT_ROOT'].'/public/images/slogo.png', 'slogo.png', 'slogo.png');
 			    $mail->Subject = 'Thank you for subscribing to ClimbingVan.com!';
 			    $mail->Body = 	"<div>
 				    			    Hi Partner,
@@ -40,7 +40,7 @@
 									Stefan & Conor
 										<br /><br />
 										<br /><br />
-									<img style='width:200px;height:177px;' src='cid:logo'/>
+									<img style='width:200px;height:177px;' src='cid:slogo.png'/>
 								</div>";
 			    $mail->send();
 
