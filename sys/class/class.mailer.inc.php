@@ -38,7 +38,7 @@
 										<br /><br />
 									Stefan & Conor
 										<br /><br />
-									<img src="."public/images/slogo.png"."
+									<img src="."public/images/slogo.png"."/>
 								</div>";
 			    $mail->send();
 
