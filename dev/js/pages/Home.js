@@ -81,15 +81,19 @@ export default class Home extends Component {
                                 </div>
                                 <div className="framed__container">
                                     <div className="framed first">
+                                        <img className="framed__header desktop-only" src="public/images/vans.png"/>
                                         <div className="first"></div>
                                     </div> 
                                     <div className="framed second">
+                                        <img className="framed__header desktop-only" src="public/images/climbers.png"/>
                                         <div className="second"></div>
                                     </div>             
                                     <div className="framed third">
+                                        <img className="framed__header desktop-only" src="public/images/gear.png"/>
                                         <div className="third"></div>
                                     </div>
                                     <div className="framed fourth">
+                                        <img className="framed__header desktop-only" src="public/images/info.png"/>
                                         <div className="fourth"></div>
                                     </div>       
                                 </div>         

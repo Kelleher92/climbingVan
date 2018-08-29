@@ -124,8 +124,13 @@
 	align-items: center;
 }
 
+.framed__header{
+	margin: auto;
+    margin-bottom: 20px;
+}
+
 .framed{
-	*{	
+	div{	
 		height: 400px;
 		width: 220px;
 		cursor: pointer;
@@ -296,7 +301,7 @@
 		width: 50%;
 		height: 100vw;
 
-		*{			
+		div{			
 			width: 46vw;
 			height: 100%;
 		}
