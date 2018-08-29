@@ -30,7 +30,7 @@
 			    $mail->Body = 	"<div>
 				    			    Hi there,
 										<br /><br />
-									Thanks for expressing your interest in ClimbingVan. Now that you have, we will send you updates about our progress - we know you are as excited as us for our launch.
+									Thanks for expressing your interest in ClimbingVan. Now that you have, we will send you updates about our progress - we know you are as excited as we are for our launch.
 										<br /><br />
 									We would also love to know a little more about you. If you think you'd be a suitable partner for this exciting new service, simply reply to us here with your details - we would love to have a chat.
 										<br /><br />
@@ -40,6 +40,7 @@
 								</div>";
 			    $mail->send();
 
+			    $mail->clearAddresses();              
 			    $mail->addAddress('iankelleher92@gmail.com');              
 			    $mail->Subject = 'New ClimbingVan.com subscriber!';
 			    $mail->Body = 	"<div>
