@@ -29,7 +29,6 @@
 			    $mail->AddEmbeddedImage('../../public/images/slogo.png', 'logo');
 
 			    $mail->AddAttachment('../../public/images/slogo.png');
-			    $mail->AddAttachment('../../../public/images/slogo.png');
 				$mail->AddAttachment('public/images/slogo.png');
 
 			    $mail->Subject = 'Thank you for subscribing to ClimbingVan.com!';
