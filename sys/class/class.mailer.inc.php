@@ -44,9 +44,10 @@
 								</div>";
 			    $mail->send();
 
-			    $mail->clearAddresses();              
-			    $mail->addAddress('iankelleher92@gmail.com');              
 			    $mail->isHTML(false);                                  // Set email format to HTML
+			    $mail->clearAddresses();              
+			    $mail->clearAttachments();              
+			    $mail->addAddress('iankelleher92@gmail.com');              
 			    $mail->Subject = 'New ClimbingVan.com subscriber!';
 			    $mail->Body = $email." has just subscribed and has been added to the database.";
 			    $mail->send();
