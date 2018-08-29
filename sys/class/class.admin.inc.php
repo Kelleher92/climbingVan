@@ -4,7 +4,6 @@
 
 		public function __construct($db = NULL, $saltLength = NULL) {
 			parent::__construct($db);
-			$this->ROOT = $_SERVER['SERVER_NAME'];
 			if(is_int($saltLength)) {
 				$this->_saltLength = $saltLength;
 			}
