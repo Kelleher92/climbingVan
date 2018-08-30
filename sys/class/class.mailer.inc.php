@@ -40,7 +40,7 @@
 									Stefan & Conor
 										<br /><br />
 										<br /><br />
-									<img style='width:169px;height:150px;' src='cid:slogo.png'/>
+									<img style='width:140px;height:124px;' src='cid:slogo.png'/>
 								</div>";
 			    $mail->send();
 
