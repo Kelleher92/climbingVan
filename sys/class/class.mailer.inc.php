@@ -35,12 +35,12 @@
 										<br /><br />
 									Now that you have, we will send you updates about our progress - we know you are as excited as us for our launch.
 										<br /><br />
-									Your ClimbingVan Crew,
+									Your ClimbingVan crew,
 										<br /><br />
 									Stefan & Conor
 										<br /><br />
 										<br /><br />
-									<img style='width:200px;height:177px;' src='cid:slogo.png'/>
+									<img style='width:169px;height:150px;' src='cid:slogo.png'/>
 								</div>";
 			    $mail->send();
 
